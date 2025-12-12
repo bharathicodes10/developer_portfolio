@@ -11,7 +11,7 @@ import NavLogo from "../public/assets/Bharathilogo.png";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("red-200");
+  const [navBg, setNavBg] = useState("green-800");
   const [linkColor, setLinkColor] = useState("black");
   //const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -37,11 +37,10 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-2xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-20 z-[100] "
+          ? "fixed w-full h-20 z-[100] ease-in-out duration-300 bg-white/40 backdrop-blur-md shadow-2xl"
+          : "fixed w-full h-20 z-[100] bg-white/20 backdrop-blur-md"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -76,7 +75,7 @@ const Navbar = () => {
               </Link>
             </li>
 
-             <li className="ml-10 text-sm uppercase">
+            <li className="ml-10 text-sm uppercase">
               <Link href="/#codes">
                 <a className="relative group tracking-[0.15em]">
                   <span>CODES</span>
@@ -84,10 +83,18 @@ const Navbar = () => {
                 </a>
               </Link>
             </li>
-             <li className="ml-10 text-sm uppercase">
+            <li className="ml-10 text-sm uppercase">
               <Link href="/#skills">
                 <a className="relative group tracking-[0.15em]">
                   <span>Skills</span>
+                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-sky-500 transition-all duration-300 group-hover:w-full" />
+                </a>
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase">
+              <Link href="/#publication">
+                <a className="relative group tracking-[0.15em]">
+                  <span>Paper</span>
                   <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-sky-500 transition-all duration-300 group-hover:w-full" />
                 </a>
               </Link>
@@ -103,7 +110,7 @@ const Navbar = () => {
             {/* <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/myProfile'>Profile</Link>
             </li> */}
-             <li className="ml-10 text-sm uppercase">
+            <li className="ml-10 text-sm uppercase">
               <Link href="/#contact">
                 <a className="relative group tracking-[0.15em]">
                   <span>contact</span>
@@ -142,7 +149,13 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Link href="/">
                 <a>
-                  <Image src={NavLogo} width="95" height="95" alt="/" className="object-contain" />
+                  <Image
+                    src={NavLogo}
+                    width="95"
+                    height="95"
+                    alt="/"
+                    className="object-contain"
+                  />
                 </a>
               </Link>
               <div
@@ -171,6 +184,11 @@ const Navbar = () => {
               <Link href="/#skills">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Skills
+                </li>
+              </Link>
+              <Link href="/#publication">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Paper
                 </li>
               </Link>
               <Link href="/#projects">

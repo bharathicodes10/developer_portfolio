@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/globals.css';
-
+import { ThemeProvider } from './ThemeContext';
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -34,8 +34,10 @@ function MyApp({ Component, pageProps }) {
         id="trail-container"
         className="fixed top-0 left-0 w-full h-full pointer-events-none z-[9999]"
       />
+      <ThemeProvider>
       <Navbar />
       <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

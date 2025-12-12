@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { IoDocumentTextOutline } from "react-icons/io5";
@@ -8,13 +8,14 @@ import { Switch } from "@headlessui/react";
 import Typical from "react-typical";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import { ThemeContext } from "../pages/ThemeContext";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Main = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const {isDark:isDarkMode, toggleTheme} = useContext(ThemeContext);
 
   useEffect(() => {
     const htmlElement = document.querySelector('html');
@@ -40,12 +41,7 @@ const Main = () => {
     };
   }, []);
   
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-    setTimeout(() => {
-      console.log("Dark mode toggled:", !isDarkMode);
-    }, 0);
-  };
+  const toggleDarkMode = toggleTheme
 
   return (
     <div
