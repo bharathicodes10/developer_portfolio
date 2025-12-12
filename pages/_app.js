@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/globals.css';
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider } from '../context/ThemeContext';
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleMouseMove = (e) => {

@@ -8,7 +8,7 @@ import { Switch } from "@headlessui/react";
 import Typical from "react-typical";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import { ThemeContext } from "../pages/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
