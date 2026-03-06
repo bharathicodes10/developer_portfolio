@@ -6,7 +6,7 @@ import codeImg from '../public/assets/projects/code-ai.png';
 import myportfolioImg from '../public/assets/projects/myportfolio.png'
 import constructionImg from '../public/assets/projects/construction.png'
 import cosmeticsImg from '../public/assets/projects/cosmetics.png'
-
+import devgramImg from '../public/assets/projects/devgram.jpg'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -18,12 +18,12 @@ const Projects = () => {
         </p>
         <h2 className='py-4'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
-          <ProjectItem
+          {/* <ProjectItem
             title='CoffeeShop'
             backgroundImg={coffeeImg}
             projectUrl='/coffee'
             tech='ASP .NET and C#'
-          />
+          /> */}
            <ProjectItem
             title='CodeAI'
             backgroundImg={codeImg}
@@ -38,9 +38,9 @@ const Projects = () => {
 
           />
           <ProjectItem
-            title='Construction Management Portal'
-            backgroundImg={constructionImg}
-            projectUrl='/cms'
+            title='Devgram'
+            backgroundImg={devgramImg}
+            projectUrl='/devgram'
             tech='MERN Stack'
 
           />
