@@ -3,7 +3,9 @@ import React from 'react';
 import myportfolioImg from '../public/assets/projects/innerport.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
-
+import { IoMdArrowBack } from "react-icons/io";
+import { FaCode } from "react-icons/fa";
+import { FiGlobe } from "react-icons/fi";
 const bpportfolio = () => {
   return (
     <div className='w-full'>
@@ -21,8 +23,13 @@ const bpportfolio = () => {
           <h3>Next JS / Tailwind CSS</h3>
         </div>
       </div>
-
-      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
+ <button className="mt-5 mx-5 p-4 w-fit cursor-pointer hover:bg-sky-500 hover:text-white rounded-lg hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-sky-500">
+        <div className="flex items-center">
+          <IoMdArrowBack />
+          <Link href="/#projects"> Go Back</Link>
+        </div>
+      </button>
+      <div className='max-w-[700px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
         <div className='col-span-4'>
           <p>Project</p>
           <h2>Overview</h2>
@@ -32,21 +39,19 @@ const bpportfolio = () => {
             hosted on github. This application uses tailwind css for styling. GetIO form is 
             used for mail sending.
           </p>
-          <a
-            href='https://github.com/bharathicodes10/bp_portfolio'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4 mr-8 p-5 hover:bg-sky-500 hover:text-white rounded-lg hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-sky-500'>Code</button>
-          </a>
-          <a
-            href='https://bharathi-priya-portfolio.vercel.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4 p-5 hover:bg-sky-500 hover:text-white rounded-lg hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-sky-500'>Demo</button>
-          </a>
+        <div className="flex items-center">
+            <button className="px-8 py-2 mt-4 mr-8 p-5 gap-2 flex items-center hover:bg-sky-500 hover:text-white rounded-lg hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-sky-500">
+              <FaCode />
+              <Link href="https://github.com/bharathicodes10/bp_portfolio">
+                Code
+              </Link>
+            </button>
 
+            <button className="px-8 py-2 mt-4 mr-8 p-5 gap-2 flex items-center hover:bg-sky-500 hover:text-white rounded-lg hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-sky-500">
+              <FiGlobe />
+              <Link href="https://thisisbharathi.vercel.app/">Demo</Link>
+            </button>
+          </div>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
@@ -73,10 +78,7 @@ const bpportfolio = () => {
             </div>
           </div>
         </div>
-        <button className='p-4 cursor-pointer p-5 hover:bg-sky-500 hover:text-white rounded-lg hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-sky-500'>
-        <Link href='/#projects'>
-          back
-        </Link></button>
+      
       </div>
     </div>
   );

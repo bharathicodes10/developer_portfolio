@@ -13,12 +13,7 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("green-800");
   const [linkColor, setLinkColor] = useState("black");
-  //const [isDarkMode, setIsDarkMode] = useState(false);
-
-  //darkmode codes
-
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
+ 
 
   const handleNav = () => {
     setNav(!nav);
@@ -141,7 +136,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "mobile-drawer fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gradient-to-r from-sky-200 to-white p-10 ease-in duration-500"
+              ? "mobile-drawer fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gradient-to-r from-sky-200 to-white p-10 ease-in duration-500 flex flex-col justify-inbetween"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
