@@ -136,7 +136,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "mobile-drawer fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gradient-to-r from-sky-200 to-white p-10 ease-in duration-500 flex flex-col justify-inbetween"
+              ? "mobile-drawer fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-[100vh] bg-gradient-to-r from-sky-200 to-white p-10 ease-in duration-500 flex flex-col justify-inbetween"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
