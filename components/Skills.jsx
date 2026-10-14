@@ -13,6 +13,8 @@ import node from "../public/assets/skills/node.png";
 import Ts from "../public/assets/skills/ts.png";
 import vapi from "../public/assets/skills/vapi.jpg";
 import NextAuth from "../public/assets/skills/nextauth.jpg";
+import mysql from "../public/assets/skills/mysql.png";
+import vercel from "../public/assets/skills/vercel.jpg";
 const Skills = () => {
   return (
     <div id="skills" className="w-full min-h-screen p-2">
@@ -57,7 +59,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-           {/* next */}
+          {/* next */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -79,7 +81,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-         
+
           {/* typescript */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -129,11 +131,6 @@ const Skills = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* database */}
-        <h3 className="py-4 mt-3">Database</h3>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {/* nextauth */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -142,6 +139,22 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>NextAuth</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* database */}
+        <h3 className="py-4 mt-3">Database</h3>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* mysql */}
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={mysql} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>MySQL</h3>
               </div>
             </div>
           </div>
@@ -171,7 +184,18 @@ const Skills = () => {
               </div>
             </div>
           </div>
-
+          {/* vercel */}
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={vercel} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Vercel</h3>
+              </div>
+            </div>
+          </div>
+          {/*github*/}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">

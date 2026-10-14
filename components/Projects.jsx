@@ -33,12 +33,13 @@ const Projects = () => {
             tech='Nextjs Vapi'
 
           />
-           <ProjectItem
+           {/* <ProjectItem
             title='CodeAI'
             backgroundImg={codeImg}
             projectUrl='/codeai'
             tech='Vite.js and OpenAI'
-          />
+          /> */}
+
           {/* <ProjectItem
             title='Portfolio webApp'
             backgroundImg={myportfolioImg}
@@ -47,13 +48,13 @@ const Projects = () => {
 
           /> */}
         
-          <ProjectItem
+          {/* <ProjectItem
             title='Online Cosmetics Shop'
             backgroundImg={cosmeticsImg}
             projectUrl='/ocs'
             tech='PHP MYSQL'
 
-          />
+          /> */}
         </div>
       </div>
     </div>

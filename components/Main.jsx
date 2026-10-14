@@ -9,7 +9,7 @@ import Typical from "react-typical";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { ThemeContext } from "../context/ThemeContext";
-
+import DescriptionIcon from '@mui/icons-material/Description';
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -101,7 +101,7 @@ const Main = () => {
           </div>
 
           <p className="uppercase text-sm font-semibold tracking-widest text-sky-600 italic">
-            NEVER STOP LEARNING
+            SOFTWARE ENGINEER & BUILDER
           </p>
           
         
@@ -115,11 +115,11 @@ const Main = () => {
           <h1 className="py-2 text-sky-600">
             <Typical
               steps={[
-                "A web developer",
+                "Full-Stack Engineer",
                 3000,
-                "A Full-stack Developer",
+                "Frontend Engineer (React & Next.js)",
                 3000,
-                "UI/UX Developer",
+                "AI Application Builder",
                 3000,
               ]}
               wrapper="p"
@@ -127,8 +127,7 @@ const Main = () => {
             />
           </h1>
           <p className="py-4 text-white-600 sm:max-w-[70%] m-auto">
-            I’m focused on building responsive front-end web applications
-            integrating with back-end technologies. Currently learning Devops!
+            Specializing in modern React, Next.js, and TypeScript architectures. I build and ship production web platforms with seamless API integrations, secure payment flows, and AI-enabled workflows.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a
@@ -156,9 +155,9 @@ const Main = () => {
             </Link>
             
             <Link href="https://flowcv.com/resume/ajea8ub2s0ui">
-            {/* <Link href="https://drive.google.com/file/d/1pVpsUGkYA63oheEaAMpIiS_gF67Unf1s/view?usp=share_link"> */}
+            
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <IoDocumentTextOutline size={18} />
+                <DescriptionIcon size={18} />
               </div>
             </Link>
           </div>

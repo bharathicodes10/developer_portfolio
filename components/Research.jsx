@@ -10,9 +10,9 @@ const Research = () => {
     <div id='publication' className='w-full animate-fade-in-down'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
         <p className='text-xl tracking-widest uppercase text-sky-500 font-semibold'>
-          Research paper
+          PUBLICATIONS & RESEARCH
         </p>
-        <h2 className='py-4'>What I&apos;ve Published</h2>
+        <h2 className='py-4'>Early COPD Prediction via Deep Transfer Learning & Audio Analysis</h2>
         <div className='grid md:grid-cols-3 gap-8'>
           <ResearchItem
             title='COPD Prediction using DTL'

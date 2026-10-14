@@ -19,11 +19,12 @@ export default function Home() {
       </Head>
     <Main />
     <About />
-    <CodeProfile/>
+   
     <Research />
     <Skills />
     <Projects />
     <Contact />
+  
     </div>
   )
 }

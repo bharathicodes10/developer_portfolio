@@ -6,11 +6,12 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import ContactImg from '../public/assets/refer.jpg';
+import ContactImg from '../public/assets/about2.jpg';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full lg:h-screen animate-fade-in-down'>
+    <div id='contact' className='w-full animate-fade-in-down'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
         <p className='text-xl tracking-widest uppercase text-sky-500'>
           Contact
@@ -19,7 +20,7 @@ const Contact = () => {
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
-            <div className='lg:p-4 h-full '>
+            <div className='lg:p-4 h-full'>
               <div>
                 <Image
                   className='rounded-xl hover:scale-105 ease-in duration-300'
@@ -31,7 +32,7 @@ const Contact = () => {
                 <h2 className='py-2'>Bharathi Priya R</h2>
                 <p>Full Stack Developer</p>
                 <p className='py-4'>
-                  I am available for freelance or full-time positions. Contact
+                  I am available for full-time positions. Contact
                   me and let&apos;s talk.
                 </p>
               </div>
@@ -63,7 +64,7 @@ const Contact = () => {
                   <Link href='https://flowcv.com/resume/ajea8ub2s0ui'>
                     <a>
                       <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <IoDocumentTextOutline size={18}/>
+                        <DescriptionIcon size={18}/>
                       </div>
                     </a>
                   </Link>
@@ -144,6 +145,17 @@ const Contact = () => {
               </div>
             </a>
           </Link>
+        </div>
+        <div className='w-full pb-8 text-center text-xs text-gray-500'>
+          <p>
+            Designed & Built by Bharathi Priya · Powered by{' '}
+            <span className='font-semibold text-gray-700'>Next.js</span> &{' '}
+            <span className='font-semibold text-gray-700'>Tailwind CSS</span> · Hosted on{' '}
+            <span className='font-semibold text-gray-700'>Vercel</span>
+          </p>
+          <p className='mt-2 text-gray-400'>
+            &copy; 2026 Bharathi Priya R. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
